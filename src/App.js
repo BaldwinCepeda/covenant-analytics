@@ -61,13 +61,13 @@ function App() {
         </div>
 
 
-      </body>
+      </body >
 
 
 
       <h6 className='disclo'>This website is still in BETA. This is 3rd party service independent of Mai Finance and please do your own research. This is not investment advice!</h6>
 
-    </div>
+    </div >
 
 
   );
