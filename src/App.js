@@ -7,12 +7,15 @@ import Button from '@mui/material/Button';
 function App() {
   return (
     <div className='App' >
+      <h1 className='Title'>Covenant-ROI Dashboard</h1>
+      <div className='Heading'>
 
-      <h1>Covenant-ROI Dashboard</h1>
-      <body>Farming Incentive Gauge Vote (round X) <br></br>
-        Vote Start: Thu, DD MM YYYY 16:00:00 GMT - Vote End: Date DD-MM-YYYY
-        Total Votes: $ X USD Total Bribes - $ X USD
-      </body>
+        <body>Farming Incentive Gauge Vote (round X) <br></br>
+          Vote Start: Thu, DD MM YYYY 16:00:00 GMT - Vote End: Date DD-MM-YYYY
+          Total Votes: $ X USD Total Bribes - $ X USD
+        </body>
+      </div>
+
 
       <body className='BodyApp'>
         <Button variant="contained"

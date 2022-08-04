@@ -18,8 +18,19 @@
   justify-content: center;
 }
 
+.Heading{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
+.Title{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
