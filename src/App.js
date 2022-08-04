@@ -27,7 +27,7 @@ function App() {
           <Box className='BoxPool' sx={{
             width: 300,
             height: 300,
-            backgroundColor: 'primary.dark',
+            backgroundColor: '#877f9d;',
             margin: 10,
 
 
@@ -45,7 +45,7 @@ function App() {
           <Box sx={{
             width: 300,
             height: 300,
-            backgroundColor: 'primary.dark',
+            backgroundColor: '#877f9d;',
 
           }}>
             <div>
