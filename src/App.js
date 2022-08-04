@@ -10,9 +10,8 @@ function App() {
 
       <h1>Covenant-ROI Dashboard</h1>
       <body>Farming Incentive Gauge Vote (round X) <br></br>
-        Vote Start: Thu, 21 Jul 2022 16:00:00 GMT - Vote End: Sun, 24 Jul 2022 16:00:00 GMT - (closed)
-
-        Total Votes: 58,166,127 Total Bribes - $36,891
+        Vote Start: Thu, DD MM YYYY 16:00:00 GMT - Vote End: Date DD-MM-YYYY
+        Total Votes: $ X USD Total Bribes - $ X USD
       </body>
 
       <body className='BodyApp'>
