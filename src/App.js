@@ -34,7 +34,7 @@ function App() {
           }}>
             <div>
               <h1>Title:Example Pool #1 </h1>
-              <body>Voting with X Amount of QI Returns</body>
+              <h4>Voting with X Amount of QI Returns</h4>
               <h3>$----.-- USD</h3>
               <Divider></Divider>
             </div>
@@ -50,7 +50,7 @@ function App() {
           }}>
             <div>
               <h1>Title:Example Pool #2 </h1>
-              <body>Voting with X Amount of QI Returns</body>
+              <h4>Voting with X Amount of QI Returns</h4>
               <h3>$----.-- USD</h3>
               <Divider></Divider>
 
