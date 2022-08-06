@@ -1,6 +1,6 @@
+
 .BodyApp{
   text-align: right;
-
 }
 .Cards{
   text-align: center;
@@ -11,11 +11,11 @@
 
 
 .disclo{
-   
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .Heading{
@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 .Title{
@@ -30,6 +31,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+ 
 }
 
 h4{
@@ -37,14 +40,7 @@ h4{
   font-size: 15px;
 }
 
-body {
-  background-color: rgb(250, 237, 220);
-}
  
 .BoxPool{
-  position: relative;
-}
-
-.nav{
   position: relative;
 }

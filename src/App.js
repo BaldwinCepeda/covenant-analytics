@@ -3,6 +3,22 @@ import NavBar from './NavBar';
 import Box from '@mui/material/Box';
 import { Divider } from '@mui/material';
 import Button from '@mui/material/Button';
+import { request, gql } from 'graphql-request'
+
+const query = gql
+  `
+  query {
+    space(id: "qidao.eth") {
+      id
+      name
+      about
+      network
+      symbol
+      members
+    }
+  }`
+
+request('https://hub.snapshot.org/graphql', query).then((data) => console.log(data))
 
 function App() {
   return (
@@ -27,8 +43,9 @@ function App() {
           <Box className='BoxPool' sx={{
             width: 300,
             height: 300,
-            backgroundColor: '#877f9d;',
+            backgroundColor: '#35B0AB;',
             margin: 10,
+            font: 'Inter'
 
 
           }}>
@@ -45,7 +62,8 @@ function App() {
           <Box sx={{
             width: 300,
             height: 300,
-            backgroundColor: '#877f9d;',
+            backgroundColor: '#35B0AB;',
+            font: 'Inter'
 
           }}>
             <div>
@@ -74,3 +92,4 @@ function App() {
 }
 
 export default App;
+
