@@ -45,7 +45,7 @@ function App() {
             height: 300,
             backgroundColor: '#35B0AB;',
             margin: 10,
-            font: 'Inter'
+            font: 'Inter',
 
 
           }}>
@@ -59,7 +59,7 @@ function App() {
           </Box>
 
 
-          <Box sx={{
+          <Box className='BoxPool' sx={{
             width: 300,
             height: 300,
             backgroundColor: '#35B0AB;',
