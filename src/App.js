@@ -5,6 +5,7 @@ import { Divider } from '@mui/material';
 import Button from '@mui/material/Button';
 import { request, gql } from 'graphql-request'
 
+var nameSpace = "";
 const query = gql
   `
   query {
@@ -18,7 +19,7 @@ const query = gql
     }
   }`
 
-request('https://hub.snapshot.org/graphql', query).then((data) => console.log(data))
+request('https://hub.snapshot.org/graphql', query).then((data) => nameSpace = data.space.id)
 
 function App() {
   return (
@@ -50,7 +51,7 @@ function App() {
 
           }}>
             <div>
-              <h1>Title:Example Pool #1 </h1>
+              <h1>NameSpace: {nameSpace} </h1>
               <h4>Voting with X Amount of QI Returns</h4>
               <h3>$----.-- USD</h3>
               <Divider></Divider>
