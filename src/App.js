@@ -4,24 +4,51 @@ import Box from '@mui/material/Box';
 import { Divider } from '@mui/material';
 import Button from '@mui/material/Button';
 import { request, gql } from 'graphql-request'
+import React from 'react';
 
-var nameSpace = "";
-const query = gql
-  `
-  query {
-    space(id: "qidao.eth") {
-      id
-      name
-      about
-      network
-      symbol
-      members
-    }
-  }`
 
-request('https://hub.snapshot.org/graphql', query).then((data) => nameSpace = data.space.id)
+
+
+const url = "https://hub.snapshot.org/graphql";
+const query = `
+query {
+  space(id: "yam.eth") {
+    name
+   
+  }
+}
+`;
+
+
 
 function App() {
+
+  const [name, setName] = React.useState([]);
+
+
+  React.useEffect(() => {
+    fetch('https://hub.snapshot.org/graphql', {
+      method: 'POST',
+
+      headers: {
+        "Content-Type": "application/json"
+      },
+
+      body: JSON.stringify({
+        query: query
+      })
+    }).then(response => response.json())
+      .then(data => setName(data.data.space.name))
+    //.then(data => console.log(data.data.space.name))
+
+
+  }, [])
+
+
+
+
+
+
   return (
     <div className='App' >
       <h1 className='Title'>Covenant-ROI Dashboard</h1>
@@ -51,7 +78,7 @@ function App() {
 
           }}>
             <div>
-              <h1>NameSpace: {nameSpace} </h1>
+              <h1>NameSpace: {name} </h1>
               <h4>Voting with X Amount of QI Returns</h4>
               <h3>$----.-- USD</h3>
               <Divider></Divider>
