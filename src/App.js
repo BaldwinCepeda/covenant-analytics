@@ -12,7 +12,7 @@ import React from 'react';
 const url = "https://hub.snapshot.org/graphql";
 const query = `
 query {
-  space(id: "yam.eth") {
+  space(id: "qidao.eth") {
     name
    
   }
@@ -27,7 +27,7 @@ function App() {
 
 
   React.useEffect(() => {
-    fetch('https://hub.snapshot.org/graphql', {
+    fetch(url, {
       method: 'POST',
 
       headers: {
@@ -78,7 +78,7 @@ function App() {
 
           }}>
             <div>
-              <h1>NameSpace: {name} </h1>
+              <h1> {name} </h1>
               <h4>Voting with X Amount of QI Returns</h4>
               <h3>$----.-- USD</h3>
               <Divider></Divider>
@@ -95,7 +95,7 @@ function App() {
 
           }}>
             <div>
-              <h1>Title:Example Pool #2 </h1>
+              <h1>{name} </h1>
               <h4>Voting with X Amount of QI Returns</h4>
               <h3>$----.-- USD</h3>
               <Divider></Divider>
