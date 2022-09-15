@@ -80,7 +80,7 @@ function App() {
             <div>
               <h1 className='T'> Balancer </h1>
               <h4> 1000 QI/1% for Bal on Polygon</h4>
-              <h3>$0.00 USD</h3>
+
               <Divider></Divider>
             </div>
 
@@ -97,7 +97,7 @@ function App() {
             <div>
               <h1>LINK </h1>
               <h4>1000 QI/1 for xxLINK on Polygon%</h4>
-              <h3>$0.00 USD</h3>
+
               <Divider></Divider>
 
             </div>
