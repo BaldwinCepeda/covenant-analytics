@@ -78,8 +78,11 @@ function App() {
 
           }}>
             <div>
-              <h1 className='T'> Balancer </h1>
-              <h4> 1000 QI/1% for Bal on Polygon</h4>
+              <h1 className='T'> qip159-vault-gauge-round-19  </h1>
+              <h4> 1250 QI/1%, capped at 20%
+                for Beefy Aave BTC on Optimism
+              </h4>
+
 
               <Divider></Divider>
             </div>
